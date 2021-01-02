@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/plainui/rc3.css?v=202012300015">
+        <link rel="icon" href="/static/plainui/img/favicon.ico" type="image/x-icon">
+        <title>Remote Chaos Experience - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (e) => {
+                document.querySelector('html').classList.remove('no-js');
+                document.querySelector('html').classList.add('js');
+            });
+        </script>
+    </head>
+    <body>
+        <ul class="sr-only">
+            <li>
+                <a href="#header">Zur Navigation</a>
+            </li>
+            <li>
+                <a href="#content">Zum Inhalt</a>
+            </li>
+            <li>
+                <a href="#footer">Zum Footer</a>
+            </li>
+        </ul>
+        <div class="container-fluid p-0 d-flex flex-column min-vh-100">
+                <main class="container" id="content">
+                    
+<div class="row justify-content-center px-6 mt-11 mb-8">
+  <div class="col-auto">
+    <a class="rc3-logo" href="/rc3/index">
+    <img src="/static/plainui/img/rc3-logo-plattform.svg" alt="Remote Chaos Experience logo" title="Remote Chaos Experience logo" />
+</a>
+  </div>
+</div>
+
+<form
+    method="POST"
+    id="login"
+    class="mw-810 border p-6 mx-auto mb-11"
+>
+    <h1 class="text-center bg-info p-3 text-white h3">login</h1>
+    <input type="hidden" name="next" value="/rc3/world">
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="1Qe5f7PY6YGsHy62tsFqQ8ghfqxsETS5x5fk4FKrucnZtAPW6tsPE7n0ROLeLrPH">
+    
+    <div class="row form-group">
+        <div class="col-sm-12 col-lg-4 mb-2 mb-lg-0">
+            <label
+                class="shadow-darkmorphism d-block font-headings p-3 text-center"
+                for="id_username"
+            >
+                Username</label>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <input
+                id="id_username"
+                class="form-control"
+                name="username"
+                type="text"
+                value="" autofocus autocapitalize="none" autocomplete="username" maxlength="150">
+            
+            
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-12 col-lg-4 mb-2 mb-lg-0">
+            <label
+                class="shadow-darkmorphism d-block font-headings p-3 text-center"
+                for="id_password"
+            >
+                Password</label>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <input
+                id="id_password"
+                class="form-control"
+                name="password"
+                type="password"
+                value="" autocomplete="current-password">
+            
+            
+        </div>
+    </div>
+    <p class="my-5 font-headings text-white text-center">By logging in you accept our use of cookies to store your user session.</p>
+
+    <ul class="row row-cols-1 row-cols-lg-3 list-unstyled">
+        <li class="col mb-3 mb-lg-0">
+            <a href="/rc3/password_reset" class="btn btn-xl btn-block btn-secondary" title="Reset Password">
+            Reset Password
+            </a>
+        </li>
+        <li class="col mb-3 mb-lg-0">
+            <a
+                href="https://tickets.events.ccc.de/rc3/"
+                target="_blank"
+                rel="external, noreferrer"
+                class="btn btn-xl btn-block btn-secondary external"
+                title="New Ticket"
+            >
+                New Ticket
+            </a>
+        </li>
+        <li class="col">
+            <button type="submit" class="btn btn-xl btn-block btn-primary" form="login">Login</button>
+        </li>
+    </ul>
+</form>
+
+
+                </main>
+            <footer id="footer" class="mt-auto border-top border-primary py-3 py-xl-5">
+                <ul class="container nav p-0 justify-content-center">
+                    <li>
+                        <a class="nav-link" title="Contact Us" href="https://legal.rc3.world">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Privacy Policy" href="https://legal.rc3.world">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="About rC3" href="https://howto.rc3.world/">About rC3</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Imprint" href="https://legal.rc3.world">Imprint</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Principles" href="https://howto.rc3.world/rules.html">Principles</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+    </html>
